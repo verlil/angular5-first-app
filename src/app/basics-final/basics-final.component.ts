@@ -12,7 +12,7 @@ export class BasicsFinalComponent implements OnInit {
   onToggleDetails() {
     var a = new Date(Date.now());
     this.showSecret = !this.showSecret;
-    this.log.push(this.log.length + 1 + ' ' + a.getHours() + ':' + a.getMinutes() + ':' + a.getSeconds());
+    this.log.push(new Date());
   }
   constructor() {
   }
